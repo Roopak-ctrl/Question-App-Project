@@ -1,0 +1,22 @@
+	
+CREATE DATABASE quiz_db;
+USE quiz_db;
+
+CREATE TABLE questions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    question TEXT NOT NULL,
+    option1 VARCHAR(255) NOT NULL,
+    option2 VARCHAR(255) NOT NULL,
+    option3 VARCHAR(255) NOT NULL,
+    correct_answer INT NOT NULL
+);
+
+INSERT INTO questions (question, option1, option2, option3, correct_answer) VALUES
+('Java is?', 'Language', 'Animal', 'Car', 0),
+('Size of int?', '2 bytes', '4 bytes', '8 bytes', 1),
+('Which keyword is used to inherit a class in Java?', 'implements', 'extends', 'inherits', 1),
+('Which collection does NOT allow duplicate elements?', 'ArrayList', 'LinkedList', 'HashSet', 2),
+('What is the default value of a boolean in Java?', 'true', 'false', 'null', 1),
+('Which layout manager arranges components left to right in rows?', 'BorderLayout', 'FlowLayout', 'GridLayout', 1),
+('Which method is the entry point of a Java program?', 'start()', 'run()', 'main()', 2),
+('Which exception is thrown when dividing an int by zero?', 'NullPointerException', 'ArithmeticException', 'ArrayIndexOutOfBoundsException', 1);
